@@ -1,37 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Torres Produções</title>
+<title>Torres Produções · Estúdio de edição de vídeo para criadores</title>
+<meta name="description" content="Estúdio de edição de vídeo para criadores. Reels, Shorts e TikTok editados com ritmo, legenda e motion, e publicados no seu perfil com a sua aprovação.">
 <link rel="icon" href="icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+
+<header class="topo">
+  <div class="miolo">
+    <a class="marca" href="./"><img src="icone.png" alt="">Torres Produções</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#tiktok">Publicação no TikTok</a>
+      <a href="#perguntas">Perguntas</a>
+      <a class="botao botao-principal" href="#contato">Falar com o estúdio</a>
+    </nav>
+  </div>
+</header>
+
 <main>
-<header><img src="icone.png" alt=""><a href="./">Torres Produções</a></header>
+  <section class="escuro abertura">
+    <div class="miolo abertura-grade">
+      <div>
+        <h1 class="titulo-1">Você grava. A gente edita e publica.</h1>
+        <p class="lead">A Torres Produções é um estúdio de edição de vídeo para criadores. Você manda o material bruto e recebe Reels, Shorts e vídeos de TikTok com ritmo, legenda e motion, prontos para o seu perfil.</p>
+        <div class="botoes">
+          <a class="botao botao-principal" href="#contato">Falar com o estúdio</a>
+          <a class="botao botao-linha" href="#trabalhos">Ver trabalhos</a>
+        </div>
+        <p class="nota">Atendimento online para criadores de todo o Brasil.</p>
+      </div>
+      <div class="celular">
+        <video id="vitrine" src="midia/vitrine.mp4" poster="midia/vitrine-capa.webp" autoplay muted loop playsinline aria-label="Trechos de vídeos editados pelo estúdio"></video>
+        <span class="selo-rec">Editado no estúdio</span>
+      </div>
+    </div>
 
-<h1>Video editing studio</h1>
-<p>Torres Produções is a small video editing studio based in Brazil. We edit short videos for the creators we work with.</p>
+    <div class="timeline" aria-hidden="true">
+      <div class="miolo palco">
+        <div class="regua"><span></span><ol class="tc"><li>0:00</li><li>0:15</li><li>0:30</li><li>0:45</li><li>1:00</li></ol></div>
+        <div class="trilha"><span>Legenda</span>
+          <div class="pista"><i class="clipe lilas" style="flex:1.1">Gancho</i><i class="clipe vazio" style="flex:.3"></i><i class="clipe lilas" style="flex:1.6">Texto na tela</i><i class="clipe lilas" style="flex:.9">Número</i><i class="clipe vazio" style="flex:.4"></i><i class="clipe lilas" style="flex:1.2">Fecho</i></div>
+        </div>
+        <div class="trilha"><span>Vídeo</span>
+          <div class="pista"><i class="clipe ambar" style="flex:.8">Abertura</i><i class="clipe ambar" style="flex:1.4">Explicação</i><i class="clipe ambar" style="flex:.6">Zoom</i><i class="clipe ambar" style="flex:1.5">Virada</i><i class="clipe ambar" style="flex:1.2">Chamada</i></div>
+        </div>
+        <div class="trilha"><span>Voz</span>
+          <div class="pista"><i class="clipe onda" style="flex:5.5"></i></div>
+        </div>
+        <span class="cabeca"></span>
+        <span class="pronto">Pronto para publicar</span>
+      </div>
+    </div>
+  </section>
 
-<h2>Our TikTok app</h2>
-<p>Our app lets the creators we work with publish the videos we edit for them directly to their own TikTok account.</p>
-<ul>
-  <li>The creator connects their TikTok account once, through TikTok's official login screen. We never see or store their password.</li>
-  <li>A video is only published after it has been approved for that account.</li>
-  <li>The app only uploads and publishes videos. It does not read messages, followers or any other private data.</li>
-  <li>The creator can disconnect the app at any time in TikTok's settings.</li>
-</ul>
+  <section class="secao" id="servicos">
+    <div class="miolo">
+      <div class="cabecalho-secao">
+        <h2 class="titulo-2">O que a gente faz</h2>
+        <p class="texto">Para criadores que querem postar com frequência sem passar a noite na linha do tempo. Cada vídeo sai pensado para o formato onde vai ser visto.</p>
+      </div>
+      <ul class="servicos">
+        <li class="servico"><span class="cor" style="background:var(--ambar)"></span><h3 class="titulo-3">Vídeos curtos</h3><p>Reels, Shorts e TikTok. Corte no ritmo da fala, legenda que acompanha a voz, zoom e texto na tela na hora certa, e um gancho forte nos primeiros segundos.</p></li>
+        <li class="servico"><span class="cor" style="background:var(--lilas)"></span><h3 class="titulo-3">Vídeos para o YouTube</h3><p>Versão longa em 16:9: limpeza de pausas e tropeços, cor e som acertados, trechos de apoio e capa.</p></li>
+        <li class="servico"><span class="cor" style="background:var(--menta)"></span><h3 class="titulo-3">Séries originais</h3><p>Do roteiro à animação: formatos próprios com narração, ilustração e efeitos sonoros. A série "E se você...?" nasceu aqui.</p></li>
+        <li class="servico"><span class="cor" style="background:var(--cobalto)"></span><h3 class="titulo-3">Publicação nas suas redes</h3><p>Com a sua autorização, o vídeo aprovado vai direto para o seu perfil, no horário combinado. Ou você recebe o arquivo final e posta quando quiser.</p></li>
+      </ul>
+      <div class="tira">
+        <img src="midia/q1.webp" alt="" loading="lazy"><img src="midia/q2.webp" alt="" loading="lazy"><img src="midia/q3.webp" alt="" loading="lazy">
+        <img src="midia/q4.webp" alt="" loading="lazy"><img src="midia/q5.webp" alt="" loading="lazy"><img src="midia/q6.webp" alt="" loading="lazy">
+        <img src="midia/q7.webp" alt="" loading="lazy"><img src="midia/q8.webp" alt="" loading="lazy"><img src="midia/q9.webp" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
 
-<h2>Contact</h2>
-<p><a href="mailto:felipetorres888@gmail.com">felipetorres888@gmail.com</a></p>
+  <section class="secao" id="como-funciona">
+    <div class="miolo">
+      <div class="cabecalho-secao">
+        <h2 class="titulo-2">Como funciona</h2>
+        <p class="texto">Quatro passos, e você decide em cada um deles. Nada é publicado sem o seu ok.</p>
+      </div>
+      <ol class="passos">
+        <li class="passo"><h3 class="titulo-3">Envie o material</h3><p>Mande os vídeos brutos por link do Google Drive ou pelo WhatsApp, com uma ideia do que quer dizer.</p></li>
+        <li class="passo"><h3 class="titulo-3">Receba a prévia</h3><p>Você recebe o vídeo editado para assistir no celular, do jeito que ele vai aparecer no feed.</p></li>
+        <li class="passo"><h3 class="titulo-3">Aprove ou peça ajuste</h3><p>Diga o que mudar. A gente ajusta até ficar do seu jeito.</p></li>
+        <li class="passo"><h3 class="titulo-3">Publicação</h3><p>Com o vídeo aprovado, publicamos no seu perfil no horário combinado, ou entregamos o arquivo para você postar.</p></li>
+      </ol>
+    </div>
+  </section>
 
-<div class="pt" lang="pt-BR">
-<h2>Em português</h2>
-<p>A Torres Produções é um pequeno estúdio de edição de vídeo no Brasil. Nosso app do TikTok permite que os criadores com quem trabalhamos publiquem, na própria conta, os vídeos que editamos para eles. A conta é conectada uma vez pela tela oficial do TikTok (nunca vemos a senha), cada vídeo só é publicado depois de aprovado, e o criador pode desconectar o app quando quiser nas configurações do TikTok.</p>
-</div>
+  <section class="secao" id="trabalhos">
+    <div class="miolo">
+      <div class="cabecalho-secao">
+        <h2 class="titulo-2">Série original: E se você...?</h2>
+        <p class="texto">Vídeos curtos que respondem perguntas absurdas com fatos de verdade, contados em desenho. Roteiro, ilustração, animação e som feitos pelo estúdio. <a href="https://www.tiktok.com/@ocortelho" rel="noopener">Assista no TikTok</a>.</p>
+      </div>
+      <div class="trabalhos">
+        <figure class="trabalho" style="margin:0"><img src="midia/buraco.webp" width="540" height="960" alt="Boneco caindo a 28 mil quilômetros por hora dentro de um túnel"><h3>E se você pulasse num buraco que atravessa a Terra?</h3><p>Física da queda, minuto a minuto.</p></figure>
+        <figure class="trabalho" style="margin:0"><img src="midia/baleia.webp" width="540" height="960" alt="Baleia cuspindo o boneco no mar"><h3>E se você fosse engolido por uma baleia?</h3><p>O que a ciência sabe sobre o cachalote.</p></figure>
+        <figure class="trabalho" style="margin:0"><img src="midia/mumia.webp" width="540" height="960" alt="Boneco em uma mesa de mumificação com o texto 40 dias de natrão"><h3>E se você fosse mumificado no Egito?</h3><p>Os 70 dias do processo, contados pelos museus.</p></figure>
+      </div>
+    </div>
+  </section>
 
-<nav><a href="termos.html">Terms of Service</a><a href="privacidade.html">Privacy Policy</a></nav>
+  <section class="secao escuro" id="tiktok">
+    <div class="miolo conexao">
+      <div>
+        <h2 class="titulo-2">Publicação no TikTok</h2>
+        <p class="lead">Para publicar os vídeos por você, a Torres Produções usa a integração oficial do TikTok. A conexão é feita uma vez e você continua no controle da sua conta.</p>
+        <div class="ingles" lang="en">
+          <h3>In English</h3>
+          <p>Torres Produções is a video editing studio. Creators who work with us can connect their TikTok account through TikTok's official login. We only publish videos we edited for them, after they approve each one, with the caption and privacy settings chosen for that post. We never see passwords, and creators can disconnect at any time. <a href="privacidade.html">Privacy Policy</a> · <a href="termos.html">Terms of Service</a></p>
+        </div>
+      </div>
+      <ul>
+        <li><strong>Conexão pela tela oficial do TikTok.</strong> O estúdio te manda um link pessoal, você entra na sua conta e autoriza a Torres Produções. Sua senha nunca passa por nós.</li>
+        <li><strong>Acesso mínimo.</strong> Vemos só o nome e a foto do perfil, para confirmar a conta certa, e a permissão de publicar vídeos.</li>
+        <li><strong>Só com a sua aprovação.</strong> Cada vídeo é publicado depois que você aprova, com a legenda e a privacidade escolhidas para aquele post.</li>
+        <li><strong>Sem mexer em mais nada.</strong> Não lemos mensagens, seguidores ou estatísticas, e não curtimos, comentamos nem seguimos ninguém em seu nome.</li>
+        <li><strong>Desconecte quando quiser.</strong> Pelas configurações do TikTok, na lista de apps conectados, ou pedindo para a gente. Veja a <a href="privacidade.html">política de privacidade</a>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao" id="perguntas">
+    <div class="miolo">
+      <h2 class="titulo-2" style="margin-bottom:40px">Perguntas frequentes</h2>
+      <div class="perguntas">
+        <details><summary>Quanto custa?</summary><p>Depende do volume e do tipo de vídeo. Mande uma mensagem contando o que você precisa e a gente responde com uma proposta.</p></details>
+        <details><summary>Em quanto tempo recebo o vídeo?</summary><p>O prazo é combinado no começo, de acordo com o tamanho e a quantidade de vídeos. A prévia sempre chega antes da data de publicação, para dar tempo de você pedir ajuste.</p></details>
+        <details><summary>Preciso passar a minha senha?</summary><p>Não. A conexão com o TikTok é feita na tela oficial do próprio TikTok. Para o Instagram e o YouTube, a gente combina o melhor jeito com você, sempre sem pedir senha por mensagem.</p></details>
+        <details><summary>Vocês publicam alguma coisa sem eu ver?</summary><p>Não. Todo vídeo passa pela sua aprovação antes. Se você não aprovar, ele não sai.</p></details>
+        <details><summary>Para quais redes vocês editam?</summary><p>Instagram (Reels e carrossel), YouTube (vídeos longos e Shorts) e TikTok.</p></details>
+        <details><summary>Posso desconectar a minha conta?</summary><p>Sim, a qualquer momento, nas configurações do TikTok ou pedindo para a gente. Quando a conta é desconectada, apagamos o acesso guardado.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato escuro" id="contato">
+    <div class="miolo">
+      <h2 class="titulo-1">Vamos editar o seu próximo vídeo?</h2>
+      <p class="lead">Conte o que você grava, com que frequência posta e onde quer aparecer. A gente responde por e-mail.</p>
+      <div class="botoes">
+        <a class="botao botao-principal" href="mailto:felipetorres888@gmail.com?subject=Quero%20editar%20meus%20v%C3%ADdeos">Escrever para o estúdio</a>
+      </div>
+      <p class="nota" style="margin-top:18px;color:rgba(238,241,245,.6)">felipetorres888@gmail.com</p>
+    </div>
+  </section>
 </main>
+
+<footer class="rodape">
+  <div class="miolo">
+    <span>© 2026 Torres Produções</span>
+    <nav aria-label="Documentos">
+      <a href="termos.html">Termos de serviço</a>
+      <a href="privacidade.html">Política de privacidade</a>
+      <a href="mailto:felipetorres888@gmail.com">Contato</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Respeita quem pediu menos movimento: a vitrine fica parada na capa.
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const v = document.getElementById("vitrine"); v.removeAttribute("autoplay"); v.pause();
+  }
+</script>
 </body>
 </html>

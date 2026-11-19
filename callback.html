@@ -6,23 +6,45 @@
 <meta name="robots" content="noindex">
 <title>Connected · Torres Produções</title>
 <link rel="icon" href="icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<main>
-<header><img src="icone.png" alt=""><a href="./">Torres Produções</a></header>
+<header class="topo">
+  <div class="miolo">
+    <a class="marca" href="./"><img src="icone.png" alt="">Torres Produções</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="./#servicos">Serviços</a>
+      <a href="./#tiktok">Publicação no TikTok</a>
+      <a class="botao botao-principal" href="./#contato">Falar com o estúdio</a>
+    </nav>
+  </div>
+</header>
+<main class="documento">
 <div id="ok" hidden>
-  <h1>Account connected</h1>
+  <h1 class="titulo-2">Account connected</h1>
   <p>Thank you. Copy the code below and send it to the studio. It expires in a few minutes and only works together with the studio's private key.</p>
   <p lang="pt-BR">Obrigado. Copie o código abaixo e envie para o estúdio. Ele expira em poucos minutos e só funciona junto com a chave privada do estúdio.</p>
-  <code id="codigo"></code>
-  <button id="copiar" type="button">Copy / Copiar</button>
+  <code class="codigo" id="codigo"></code>
+  <button class="botao botao-principal" id="copiar" type="button" style="margin-top:14px">Copy / Copiar</button>
 </div>
 <div id="erro" hidden>
-  <h1>Not connected</h1>
+  <h1 class="titulo-2">Not connected</h1>
   <p>The connection was cancelled or failed. Nothing was shared. / A conexão foi cancelada ou falhou. Nada foi compartilhado.</p>
 </div>
 </main>
+<footer class="rodape">
+  <div class="miolo">
+    <span>© 2026 Torres Produções</span>
+    <nav aria-label="Documentos">
+      <a href="termos.html">Termos de serviço</a>
+      <a href="privacidade.html">Política de privacidade</a>
+      <a href="mailto:felipetorres888@gmail.com">Contato</a>
+    </nav>
+  </div>
+</footer>
 <script>
   const p = new URLSearchParams(location.search);
   const codigo = p.get("code");
