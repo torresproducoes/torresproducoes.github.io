@@ -58,7 +58,8 @@
   if (s && k) {
     const q = new URLSearchParams({ client_key: k, response_type: "code",
       scope: "user.info.basic,video.upload,video.publish",
-      redirect_uri: "https://torresproducoes.github.io/callback.html", state: s });
+      redirect_uri: "https://torresproducoes.github.io/callback.html", state: s,
+      disable_auto_auth: "1" });  // sempre mostra a tela de permissão do TikTok
     document.getElementById("entrar").href = "https://www.tiktok.com/v2/auth/authorize/?" + q.toString();
     document.getElementById("convite").hidden = false;
   } else {
