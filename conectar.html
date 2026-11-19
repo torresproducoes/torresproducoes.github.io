@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Conectar o TikTok · Torres Produções</title>
+<link rel="icon" href="icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <div class="miolo">
+    <a class="marca" href="./"><img src="icone.png" alt="">Torres Produções</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="./#servicos">Serviços</a>
+      <a href="./#tiktok">Publicação no TikTok</a>
+      <a class="botao botao-principal" href="./#contato">Falar com o estúdio</a>
+    </nav>
+  </div>
+</header>
+<main class="documento">
+  <div id="convite" hidden>
+    <h1 class="titulo-2">Conectar a sua conta do TikTok</h1>
+    <p class="data">Connect your TikTok account</p>
+    <p>Com a conta conectada, a Torres Produções publica no seu perfil os vídeos que editamos para você, só depois que você aprovar cada um.</p>
+    <ul>
+      <li>Você entra pela tela oficial do TikTok. Sua senha nunca passa por nós.</li>
+      <li>Vemos só o nome e a foto do perfil, e recebemos a permissão de publicar vídeos.</li>
+      <li>Você pode desconectar quando quiser, nas configurações do TikTok.</li>
+    </ul>
+    <p lang="en" style="color:var(--tinta-2)">Once connected, Torres Produções publishes to your profile the videos we edit for you, only after you approve each one. You sign in on TikTok's own screen and can disconnect at any time.</p>
+    <div class="botoes"><a class="botao botao-principal" id="entrar" href="#">Continuar com o TikTok</a></div>
+    <p style="margin-top:18px;font-size:15px;color:var(--tinta-2)">Ao continuar, você concorda com os <a href="termos.html">termos de serviço</a> e a <a href="privacidade.html">política de privacidade</a>.</p>
+  </div>
+  <div id="sem-convite" hidden>
+    <h1 class="titulo-2">Link de conexão incompleto</h1>
+    <p>Este endereço precisa do link pessoal que o estúdio te mandou. Peça um novo pelo <a href="mailto:felipetorres888@gmail.com">e-mail do estúdio</a>.</p>
+  </div>
+</main>
+<footer class="rodape">
+  <div class="miolo">
+    <span>© 2026 Torres Produções</span>
+    <nav aria-label="Documentos">
+      <a href="termos.html">Termos de serviço</a>
+      <a href="privacidade.html">Política de privacidade</a>
+      <a href="mailto:felipetorres888@gmail.com">Contato</a>
+    </nav>
+  </div>
+</footer>
+<script>
+  // O estúdio gera o link com um código único (s) e a chave pública do app (k).
+  const p = new URLSearchParams(location.search);
+  const s = p.get("s"), k = p.get("k");
+  if (s && k) {
+    const q = new URLSearchParams({ client_key: k, response_type: "code",
+      scope: "user.info.basic,video.upload,video.publish",
+      redirect_uri: "https://torresproducoes.github.io/callback.html", state: s });
+    document.getElementById("entrar").href = "https://www.tiktok.com/v2/auth/authorize/?" + q.toString();
+    document.getElementById("convite").hidden = false;
+  } else {
+    document.getElementById("sem-convite").hidden = false;
+  }
+</script>
+</body>
+</html>
