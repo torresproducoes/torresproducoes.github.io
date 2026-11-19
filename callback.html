@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Connected · Torres Produções</title>
+<link rel="icon" href="icone.png">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<main>
+<header><img src="icone.png" alt=""><a href="./">Torres Produções</a></header>
+<div id="ok" hidden>
+  <h1>Account connected</h1>
+  <p>Thank you. Copy the code below and send it to the studio. It expires in a few minutes and only works together with the studio's private key.</p>
+  <p lang="pt-BR">Obrigado. Copie o código abaixo e envie para o estúdio. Ele expira em poucos minutos e só funciona junto com a chave privada do estúdio.</p>
+  <code id="codigo"></code>
+  <button id="copiar" type="button">Copy / Copiar</button>
+</div>
+<div id="erro" hidden>
+  <h1>Not connected</h1>
+  <p>The connection was cancelled or failed. Nothing was shared. / A conexão foi cancelada ou falhou. Nada foi compartilhado.</p>
+</div>
+</main>
+<script>
+  const p = new URLSearchParams(location.search);
+  const codigo = p.get("code");
+  if (codigo) {
+    document.getElementById("ok").hidden = false;
+    document.getElementById("codigo").textContent = codigo + (p.get("state") ? "|" + p.get("state") : "");
+    document.getElementById("copiar").onclick = () => navigator.clipboard.writeText(document.getElementById("codigo").textContent);
+  } else {
+    document.getElementById("erro").hidden = false;
+  }
+</script>
+</body>
+</html>

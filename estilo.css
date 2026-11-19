@@ -1,0 +1,16 @@
+:root { --fundo: #FAF6F0; --texto: #2B211B; --ouro: #A9824B; --linha: #E6DCCF; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font: 17px/1.65 Georgia, "Times New Roman", serif; }
+main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+header img { width: 56px; height: 56px; border-radius: 10px; }
+header a { color: var(--texto); text-decoration: none; font-size: 22px; font-weight: bold; }
+h1 { font-size: 30px; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+.data { color: #6B5B4E; font-size: 15px; }
+a { color: var(--ouro); }
+nav { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--linha); font-size: 15px; }
+nav a { margin-right: 18px; }
+.pt { margin-top: 56px; padding-top: 24px; border-top: 2px solid var(--linha); }
+code { background: #fff; border: 1px solid var(--linha); padding: 10px 12px; display: block; word-break: break-all; font-size: 15px; }
+button { margin-top: 10px; padding: 8px 16px; font: inherit; background: var(--texto); color: var(--fundo); border: 0; border-radius: 6px; cursor: pointer; }
